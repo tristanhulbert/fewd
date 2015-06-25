@@ -1,0 +1,21 @@
+body {
+	background-color: grey;
+	margin: 0;
+}
+
+header nav {
+	text-align: center;
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin: 30px;
+}
+
+ul {
+    margin: 0;
+}
+
