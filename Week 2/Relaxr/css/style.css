@@ -60,8 +60,8 @@ body {
 /* Center the container */
 #container {
   width: 100%;
-  margin: auto;
-  height: 500px;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 
@@ -69,136 +69,137 @@ body {
 /* HEADER
 /*******************************************/
 
-#headerimg {
-    background-image: url('../images/header_bg.jpg');
-}
-
 header {
-  background-position: center center;
   background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
+  background: url(../images/header_bg.jpg);
+  height: 500px;
   text-align: center;
-}
-
-header logo {
-  color: #fff;
-  font-size: 24px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  display: inline-block;
-  padding: 50px 37% 0 0;
 }
 
 header h1 {
-    color: #fff;
-    font-size: 32px;
-    font-weight: 600;
-    padding: 180px 0 20px 0;
-    text-align: center;
-}
-
-.header-btn {
-  font-size: 14px;
-  font-weight: 800;
-  border-radius: 5px;
-  border-style: none;
-  margin: 40px 0 80px 0;
-  color: #033048;
-  background-color: #f9e42e;
-  padding: 10px 35px 10px 35px;
-}
-
-.header-btn:hover {
-  background-color: #EFD811;
-}
-
-/******************************************
-/* BENEFITS SECTION
-/*******************************************/
-
-.benefits-section {
-  background-color: #f0efef
-}
-
-.benefits-section h2 {
-  color: #033048;
-  font-size: 24px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
   font-weight: 600;
-  padding: 100px 0 50px 30%;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.benefits-section p {
-  padding: 5px 0 30px 30%;
-  font-size: 20px;
-  font-weight: 300;
-  color: #606161;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.benefits-section ul {
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #606161;
-  padding: 5px 0 100px 33%;
-  list-style: disc;
-
-}
-
-/******************************************
-/* QUOTE SECTION
-/*******************************************/
-
-.quote-section {
-  background: url('../images/testimonial_bg.jpg');
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 10%;
+  padding: 100px 0 40px 0;
   text-align: center;
 }
 
-.quote-section blockquote {
-  font-size: 25px;
-  font-style: italic;
+.header-btn {
+  background-color: #f9e42e;
+  border-radius: 5px;
+  border-style: none;
+  color: #033048;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #fff;
-  padding: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 30px 0 80px 0;
+  padding: 10px 40px 10px 40px;
 }
 
-.quote-section span {
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+.header-btn:hover {
+  background-color: #DDCC3E;
+}
+
+
+.header-logo {
   color: #fff;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 80px 530px 0 0;
 }
 
 /******************************************
-/* CTA SECTION
+/* BENEFITS
 /*******************************************/
 
-.cta-section {
+.benefits {
+  background: #f0efef;
+  height: 400px;
+}
+
+.benefits h2 {
+  color: #033048;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 70px 0 50px 175px;
+}
+
+.benefits p {
+  color: #606161;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 0 20px 175px;
+}
+
+.benefits ul {
+  color: #606161;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  list-style: disc;
+  padding: 0 0 0 220px;
+}
+
+/******************************************
+/* QUOTE
+/*******************************************/
+
+.quote {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background: url(../images/testimonial_bg.jpg);
+  height: 350px;
+  opacity: .9;
+  text-align: center;
+}
+
+.quote blockquote {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  padding: 85px 0 20px 0;
+}
+
+.quote span {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/******************************************
+/* CTA
+/*******************************************/
+
+.cta {
   background-color: #f9e42e;
   padding: 50px;
   text-align: center;
 }
 
-.cta-btn {
-  font-size: 16px;
-  font-weight: 800;
+.cta button {
+  background-color: #033048;
   border-radius: 5px;
   border-style: none;
-  margin: 40px;
   color: #fff;
-  background-color: #033048;
-  padding: 20px 50px 20px 50px;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 15px 65px 15px 65px;
+  cursor: pointer;
 }
 
-.cta-btn:hover {
-  background-color: #0C4564;
-
+.cta button:hover {
+  background-color: #075077;
 }
 
 /******************************************
@@ -206,30 +207,29 @@ header h1 {
 /*******************************************/
 
 footer {
-  background-color: #2E2E2E;
-  text-align: center;
-  color: #fff;
+  background: #2E2E2E;
   height: 300px;
+  text-align: center;
 }
 
-footer logo {
-  color: #f9e42e;
-  font-size: 24px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+.footer-logo {
   display: inline-block;
-  padding: 70px 0 50px 0;
+  color: #f9e42e;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  padding: 50px;
 }
 
 footer a {
-  padding: 0 10px 0 10px;
+  margin: 15px;
 }
 
 footer p {
-  padding: 80px 0 0 0;
+  padding: 50px 0 0 0;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 400;
 }
-
 
