@@ -69,31 +69,31 @@ body {
 /*******************************************/
 
 header {
-  height: 80px;
+  min-height: 80px;
   background-color: #033048;
 }
 
-.header-logo {
+header .logo {
   color: #fff;
-  display: inline-block;
   font-size: 28px;
   font-weight: 800;
   float: left;
   text-decoration: none;
-  padding: 20px 0 0 40px;
+  padding: 20px 0 0 60px;
 }
 
 nav {
   float: right;
   color: #f9e42e;
-  margin: 30px 0px 30px 0;
+  padding: 30px 40px 30px 0;
+/*  margin: 30px 40px 30px 0; Need to check this*/
 }
 
 header nav a {
   text-decoration: none;
   color: #f9e42e;
   font-size: 16px;
-  padding: 0 20px 0 0;
+  padding: 0 50px 0 0;
 }
 
 /******************************************
@@ -103,25 +103,41 @@ header nav a {
 #main-content {
   float: left;
   width: 70%;
-  margin-top: 50px;
-  padding: 0 0 0 40px;
+  padding: 20px 0 0 60px;
 }
 
 article h2 {
   color: #033048;
-  font-size: 30px;
+  font-size: 36px;
+  padding: 30px 0 20px 0;
 }
+
+.dropcap { 
+    float: left;
+    font-weight: 400;
+    font-size: 60px; 
+    line-height: 60px; 
+    padding-top: 4px; 
+    padding-right: 8px; 
+    padding-left: 3px; 
+}
+
 
 article p {
   font-size: 18px;
   font-weight: 300;
+  padding: 20px 0;
+  color: #606161;
 }
 
 .read-more {
   text-align: right;
   color: #033048;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 22px;
+  text-decoration: none;
 }
+
 
 /******************************************
 /* ASIDE
@@ -130,12 +146,37 @@ article p {
 aside {
   float: right;
   width: 25%;
-  margin-top: 50px;
+  padding: 10px 50px 0 0;
+}
+
+aside li a {
+  color: #033048;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 aside h3 {
     font-size: 28px;
     font-weight: 800;
+    color: #033048;
+    padding-top: 40px;
+}
+
+aside p {
+  color: #033048;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+aside a {
+  color: #033048;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+aside img {
+  padding-top: 50px;
 }
 
 /******************************************
@@ -145,8 +186,8 @@ aside h3 {
 .cta {
   background-color: #f9e42e;
   padding: 50px;
-  margin-top: 50px;
   text-align: center;
+  border-top: solid 90px #f0efef;
 }
 
 .cta button {
@@ -158,6 +199,11 @@ aside h3 {
   font-weight: 800;
   padding: 15px 65px 15px 65px;
   cursor: pointer;
+}
+
+.cta a {
+  color: white;
+  text-decoration: none;
 }
 
 .cta button:hover {
