@@ -1,0 +1,153 @@
+/*Body*/
+
+body {
+/*	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Merriweather', serif;
+	font-family: 'Oswald', sans-serif;*/
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+/*Wrapper*/
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Header*/
+
+header {
+	background-color: #000;
+	min-height: 90px;
+	border-bottom: solid #FCF549 4px;
+}
+
+header .logo {
+	font-family: 'Merriweather', serif;
+	color: #FCF549;
+	font-weight: 700;
+	font-size: 22px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px 0 0 20px;
+}
+
+nav {
+	text-align: right;
+}
+
+nav a {
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 20px 0 0;
+	font-family: 'Source Sans Pro', sans-serif
+}
+
+.nav-font {
+	font-family: 'Oswald', sans-serif;
+}
+
+/*Blockquote*/
+
+.blockquote {
+	min-height: 60px;
+	background-color: #C1C1C1;
+	text-align: center;
+}
+
+.blockquote blockquote {
+	padding: 20px;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.blockquote del {
+	color: #999999;
+}
+
+.blockquote span {
+	border-bottom: solid 2px yellow;
+}
+
+/* Main Content*/
+
+#cover {
+	background-image: url('../img/coworking.jpg');
+	background-position: center center;
+  	background-size: cover;
+}
+
+.aside {
+	display: inline;
+	background-color: white;
+	opacity: .9;
+	float: right;
+	margin: 50px 50px 50px 0;
+
+}
+
+.aside h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	padding: 25px 20px 10px 20px;
+}
+
+.aside p {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000;
+	line-height: 20px;
+	padding: 10px 20px 20px 20px;
+}
+
+.aside .btn {
+	padding: 10px 40px 10px 40px;
+	background-color: #FCF549;
+	border: none;
+	border-radius: 3px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	border-bottom: solid 3px #CAC438;
+	cursor: pointer;
+	margin: 10px 20px 20px 20px;
+}
+
+/*CTA Section*/
+
+.cta {
+	display: inline;
+	float: left;
+	min-width: 320px;
+}
+
+.cta h2 {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+/*Footer*/
+
+footer {
+	min-height: 60px;
+	background-color: #000;
+	text-align: left;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+footer p {
+	padding: 20px;
+}
